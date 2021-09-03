@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<channel-adaptor name="bank"
+                 class="org.jpos.q2.iso.ChannelAdaptor"
+                 logger="Q2">
+    <channel class="org.jpos.iso.channel.NACChannel"
+             packager="org.jpos.iso.packager.GenericPackager">
+        <property name="host" value="localhost" />
+        <property name="port" value="9999" />
+        <property name="packager-config" value="cfg/packager.xml" />
+    </channel>
+    <in>bank-send</in>
+    <out>bank-receive</out>
+    <reconnect-delay>5000</reconnect-delay>
+</channel-adaptor>

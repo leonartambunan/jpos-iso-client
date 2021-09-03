@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank-logon-mgr class="id.nio.iso.BankNetworkManagement"
+                        name="bank-logon-manager"
+                        logger="Q2">
+    <property name="persistent-space" value="@bank.logon.space@"/>
+    <property name="mux" value="bank-mux"/>
+    <property name="channel-ready" value="bank.ready"/>
+    <property name="timeout" value="30000"/>
+    <property name="echo-interval" value="300000"/>
+    <property name="logon-interval" value="43200000"/>
+    <property name="channel_name" value="bank"/>
+    <!--
+      <property name="timeout"        value="900000" />
+      <property name="echo-interval"  value="180000" />
+      <property name="logon-interval" value="43200000" />
+       -->
+</bank-logon-mgr>
+

@@ -1,0 +1,7 @@
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="bank.mux">
+    <in>bank-receive</in>
+    <out>bank-send</out>
+    <ready>bank.ready</ready>
+    <unhandled>bank.unhandled</unhandled>
+    <key>7,11</key>
+</mux>
